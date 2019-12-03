@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "keywords.h"
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
@@ -78,17 +79,16 @@ int main(void) {
 	 } 
 	 
 	
-	
-	
 	// word readint & anlaysis
 	
 	while (fget_word(fp,word) !=0)
 	{
-		printf("%s\n", word);
+		count_word(word);
 	}
 	
-	
 	//output
+	
+	print_word();
 	fclose(fp);
 	
 	return 0;
